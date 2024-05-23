@@ -8,10 +8,10 @@ public class Eggs : BreakfastItem{
 
   public async Task<Eggs> FryEggsAsync() {
     Console.WriteLine("Warming the egg pan...");
-    await Task.Delay(3000);
+    await Task.Delay(1000);
     Console.WriteLine($"cracking {NumberOfItems} eggs");
     Console.WriteLine("cooking the eggs ...");
-    await Task.Delay(3000);
+    await Task.Delay(1000);
     Console.WriteLine("Put eggs on plate");
     return this;
   }

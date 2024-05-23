@@ -10,14 +10,14 @@ public class Bacon : BreakfastItem{
   public async Task<Bacon> FryBaconAsync() {
     AddBaconToPan();
     CookFirstSideOfBacon();
-    await Task.Delay(3000);
+    await Task.Delay(1000);
     for (int slice = 0; slice < NumberOfItems; slice++) {
       FlipBacon();
-      await Task.Delay(1000);
+      await Task.Delay(500);
     }
 
     CookSecondSideOfBacon();
-    await Task.Delay(3000);
+    await Task.Delay(1000);
     PutBaconOnPlate();
     return this;
   }
